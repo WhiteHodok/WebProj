@@ -1679,3 +1679,22 @@ button[type="submit"]:hover {
 .register-form:hover {
   box-shadow: 0 0 10px #ccc;
 }
+
+.login-form {
+  width: 80%;
+  margin: 50px auto;
+  padding: 30px;
+
+  border: 1px solid #ddd;
+  border-radius: 20px;
+
+  /* Остальные стили аналогичны форме регистрации */
+}
+
+.form-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Стили кнопок аналогичны регистрации */
