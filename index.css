@@ -1628,3 +1628,54 @@ IMG.displayed {
   box-shadow: 0 0 20px #aaa;
   transform: scale(1.05);
 }
+
+.register-form {
+  width: 80%; /* Растягиваем на 80% ширины */
+  margin: 50px auto;
+  padding: 30px;
+
+  border: 1px solid #ddd;
+  border-radius: 20px;
+
+  transition: 0.3s box-shadow;
+}
+
+.form-field {
+  margin-bottom: 30px; /* Увеличиваем отступы между полями */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+
+  border: 1px solid #ccc;
+  border-radius: 30px;
+
+  /* Стили шрифта */
+}
+
+button[type="submit"] {
+  display: inline-block;
+  padding: 12px 30px;
+
+  background-color: #007bff;
+  color: #fff;
+
+  border: none;
+  border-radius: 30px;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: 0.3s background-color;
+}
+
+button[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+.register-form:hover {
+  box-shadow: 0 0 10px #ccc;
+}
