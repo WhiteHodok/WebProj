@@ -1570,3 +1570,22 @@
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
 }
+
+.who-we-are1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.who-we-are2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-photo-who-we-are {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
