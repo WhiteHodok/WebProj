@@ -203,24 +203,26 @@
   border-color: var(--dl-color-primary1-blue100);
   border-width: 1px;
   margin-right: var(--dl-space-space-twounits);
-  padding-left: 1.5rem;
+  padding: 1.5rem;
   border-radius: 45px;
-  padding-right: 1.5rem;
-}
-.home-register {
-  color: var(--dl-color-gray-white);
   transition: 0.3s;
-  font-weight: bold;
-  border-color: var(--dl-color-primary1-blue100);
-  padding-left: 1.5rem;
-  border-radius: 45px;
-  padding-right: 1.5rem;
+}
+
+.home-login:hover {
   background-color: var(--dl-color-primary1-blue100);
 }
+
+.home-register {
+  color: var(--dl-color-gray-white);
+  font-weight: bold;
+  border-color: var(--dl-color-primary1-blue100);
+  padding: 1.5rem;
+  border-radius: 45px;
+  background-color: var(--dl-color-primary1-blue100);
+  transition: 0.3s;
+}
+
 .home-register:hover {
-  border-color: rgba(41, 20, 119, 0.9);
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   background-color: rgba(41, 20, 119, 0.9);
 }
 .home-burger-menu {
