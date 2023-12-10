@@ -159,6 +159,7 @@
   flex-direction: row;
   justify-content: center;
 }
+
 .home-nav1 {
   transition: 0.3s;
 }
@@ -203,24 +204,26 @@
   border-color: var(--dl-color-primary1-blue100);
   border-width: 1px;
   margin-right: var(--dl-space-space-twounits);
-  padding-left: 1.5rem;
+  padding: 1.5rem;
   border-radius: 45px;
-  padding-right: 1.5rem;
-}
-.home-register {
-  color: var(--dl-color-gray-white);
   transition: 0.3s;
-  font-weight: bold;
-  border-color: var(--dl-color-primary1-blue100);
-  padding-left: 1.5rem;
-  border-radius: 45px;
-  padding-right: 1.5rem;
+}
+
+.home-login:hover {
   background-color: var(--dl-color-primary1-blue100);
 }
+
+.home-register {
+  color: var(--dl-color-gray-white);
+  font-weight: bold;
+  border-color: var(--dl-color-primary1-blue100);
+  padding: 1.5rem;
+  border-radius: 45px;
+  background-color: var(--dl-color-primary1-blue100);
+  transition: 0.3s;
+}
+
 .home-register:hover {
-  border-color: rgba(41, 20, 119, 0.9);
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   background-color: rgba(41, 20, 119, 0.9);
 }
 .home-burger-menu {
@@ -244,6 +247,17 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--dl-color-gray-white);
+}
+.mobile-menu-links {
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ddd;
+}
+
+.mobile-menu-links a {
+  display: block;
+  margin: 10px 0;
 }
 .home-nav {
   display: flex;
@@ -1337,9 +1351,13 @@
   .home-navbar-interactive {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
+    max-width: 1280px;
   }
   .home-desktop-menu {
     display: none;
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 980px;
   }
   .home-burger-menu {
     display: flex;
@@ -1506,6 +1524,12 @@
   }
   .home-logo {
     font-size: 1.5em;
+    width: 180px;
+  }
+  @media (max-width: 991px) {
+    .home-logo {
+      width: 140px;
+    }
   }
   .home-mobile-menu {
     padding: 16px;
@@ -1570,3 +1594,129 @@
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
 }
+
+.who-we-are1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.who-we-are2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-photo-who-we-are {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.github-widget1 {
+  text-align: right;
+  margin: 20px;
+}
+
+.github-widget1 img {
+  max-width: 100%;
+}
+
+.github-widget2 {
+  text-align: left;
+  margin: 20px;
+}
+
+.github-widget2 img {
+  max-width: 100%;
+}
+
+IMG.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto }
+
+.round-box {
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #ddd;
+  transition: 0.3s;
+  margin-bottom: 90px;
+}
+
+.round-box:hover {
+  box-shadow: 0 0 20px #aaa;
+  transform: scale(1.05);
+}
+
+.register-form {
+  width: 80%; /* Растягиваем на 80% ширины */
+  margin: 50px auto;
+  padding: 30px;
+
+  border: 1px solid #ddd;
+  border-radius: 20px;
+
+  transition: 0.3s box-shadow;
+}
+
+.form-field {
+  margin-bottom: 30px; /* Увеличиваем отступы между полями */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+
+  border: 1px solid #ccc;
+  border-radius: 30px;
+
+  /* Стили шрифта */
+}
+
+button[type="submit"] {
+  display: inline-block;
+  padding: 12px 30px;
+
+  background-color: #007bff;
+  color: #fff;
+
+  border: none;
+  border-radius: 30px;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: 0.3s background-color;
+}
+
+button[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+.register-form:hover {
+  box-shadow: 0 0 10px #ccc;
+}
+
+.login-form {
+  width: 80%;
+  margin: 50px auto;
+  padding: 30px;
+
+  border: 1px solid #ddd;
+  border-radius: 20px;
+
+  /* Остальные стили аналогичны форме регистрации */
+}
+
+.form-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Стили кнопок аналогичны регистрации */
